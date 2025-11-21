@@ -18,7 +18,7 @@ jobs:
   pre-commit:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6
     - name: Set up Python environment and install dependencies
       uses: ./.github/actions/camel_install
       with:
