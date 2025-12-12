@@ -16,7 +16,7 @@ runs:
       run: |
         pip install uv
       shell: bash
-    - uses: actions/cache/restore@v3
+    - uses: actions/cache/restore@a7833574556fa59680c1b7cb190c1735db73ebf0 # v5
       id: cache-restore
       name: Restore caches for the virtual environment based on uv.lock
       with:
@@ -44,7 +44,7 @@ runs:
         source .venv/bin/activate
         uv pip install -e ".[all, dev, docs]"
       shell: bash
-    - uses: actions/cache/save@v3
+    - uses: actions/cache/save@a7833574556fa59680c1b7cb190c1735db73ebf0 # v5
       name: Save caches based on uv.lock
       if: steps.cache-restore.outputs.cache-hit != 'true' || steps.validate-venv.outputs.cache-valid == 'false'
       with:
