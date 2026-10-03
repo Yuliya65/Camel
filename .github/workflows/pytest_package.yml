@@ -24,7 +24,7 @@ jobs:
   pytest_package_fast_test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@a37ce9120846195fa4ece8f58b268e6043cb2f26 # v3
     - name: Set up Python environment and install dependencies
       uses: ./.github/actions/camel_install
       with:
@@ -112,7 +112,7 @@ jobs:
   pytest_package_llm_test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@a37ce9120846195fa4ece8f58b268e6043cb2f26 # v3
     - name: Set up Python environment and install dependencies
       uses: ./.github/actions/camel_install
       with:
@@ -200,7 +200,7 @@ jobs:
   pytest_package_very_slow_test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@a37ce9120846195fa4ece8f58b268e6043cb2f26 # v3
     - name: Set up Python environment and install dependencies
       uses: ./.github/actions/camel_install
       with:
