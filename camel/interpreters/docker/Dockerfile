@@ -1,5 +1,5 @@
-# syntax=docker/dockerfile:1
-FROM ubuntu:22.04
+# syntax=docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e
+FROM ubuntu:22.04@sha256:076e7bf82319619f28dd0aa9c02ab34b055ad37100395b4f49a2ffba04fb5e11
 
 ENV DEBIAN_FRONTEND=noninteractive
 
